@@ -1,0 +1,29 @@
+div.diagramContainer {
+    width: 100%;
+}
+
+div.diagram {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.circle {
+    width: 600px;
+    height: 600px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    border-radius: 300px;
+    display: inline-block;
+}
+
+#circleL { 
+    background: red;
+    opacity: .50;
+}
+
+#circleR { 
+    position: relative;
+    background: blue;
+    opacity: .50;
+    z-index: 2;
+}
