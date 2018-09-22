@@ -1,29 +1,35 @@
 div.diagramContainer {
     width: 100%;
+    padding-top: 200px;
 }
 
 div.diagram {
     margin: 0 auto;
     text-align: center;
+    position: absolute;
+    min-width: 100px;
 }
 
-.circle {
-    width: 600px;
-    height: 600px;
+.leaf {
+    width: 700px;
+    height: 400px;
     -webkit-border-radius: 300px;
     -moz-border-radius: 300px;
     border-radius: 300px;
     display: inline-block;
 }
 
-#circleL { 
+#leafL { 
+    position: relative;
     background: red;
     opacity: .50;
+    right: -200px;
 }
 
-#circleR { 
+#leafR { 
     position: relative;
     background: blue;
     opacity: .50;
     z-index: 2;
+    left: -200px;
 }
