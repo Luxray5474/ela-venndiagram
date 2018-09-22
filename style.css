@@ -1,3 +1,13 @@
+* {
+    font-family: "Exo" !important;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: 100;
+}
+
 div.diagramContainer {
     width: 100%;
     padding-top: 200px;
@@ -23,7 +33,7 @@ div.diagram {
     position: relative;
     background: red;
     opacity: .50;
-    right: -200px;
+    right: -203px;
 }
 
 #leafR { 
@@ -31,5 +41,20 @@ div.diagram {
     background: blue;
     opacity: .50;
     z-index: 2;
-    left: -200px;
+    left: -203px;
+}
+
+#overlap {
+    position: relative;
+    background: rgb(182, 179, 179);
+    width: 400px;
+    height: 400px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    border-radius: 300px;
+    display: inline-block;
+    z-index: 3;
+    opacity: 0;
+    top: -405px;
+    left: -1px;
 }
