@@ -18,7 +18,7 @@ h1 {
 }
 
 .diagram {
-    background: #313131;   
+    background: transparent;   
     width: 1000px;
     height: 400px;
     text-align: center;
