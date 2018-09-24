@@ -52,3 +52,20 @@ h1 {
     margin-left: -200px;
     z-index: 3;
 }
+
+.labelContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    z-index: 5;
+    color: #FFF;
+}
+
+#labelContainerLeft { 
+    padding-right: 380px;
+}
+
+#labelContainerRight { 
+    padding-left: 380px;
+}
