@@ -8,53 +8,47 @@ h1 {
     font-weight: 100;
 }
 
-div.diagramContainer {
+.diagramContainer {
     width: 100%;
+    height: 500px;
     padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-div.diagram {
-    margin: 0 auto;
+.diagram {
+    background: #313131;   
+    width: 1000px;
+    height: 400px;
     text-align: center;
-    position: absolute;
-    min-width: 100px;
 }
 
-.leaf {
+.leaf, #overlap {
     width: 700px;
     height: 400px;
     -webkit-border-radius: 300px;
     -moz-border-radius: 300px;
     border-radius: 300px;
+    position: absolute;
     display: inline-block;
+    opacity: .50;
 }
 
 #leafL { 
-    position: relative;
+    margin-left: -500px;
     background: red;
-    opacity: .50;
-    right: -203px;
 }
 
 #leafR { 
-    position: relative;
     background: blue;
-    opacity: .50;
+    margin-left: -200px;
     z-index: 2;
-    left: -203px;
 }
 
 #overlap {
-    position: relative;
-    background: rgb(182, 179, 179);
+    background: transparent;
     width: 400px;
-    height: 400px;
-    -webkit-border-radius: 300px;
-    -moz-border-radius: 300px;
-    border-radius: 300px;
-    display: inline-block;
+    margin-left: -200px;
     z-index: 3;
-    opacity: 0;
-    top: -405px;
-    left: -1px;
 }
