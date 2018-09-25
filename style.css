@@ -8,10 +8,12 @@ h1 {
     font-weight: 100;
 }
 
+/* DIAGRAM */
+
 .diagramContainer {
     width: 100%;
     height: 500px;
-    padding-top: 100px;
+    padding-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,6 +39,7 @@ h1 {
 #leafL { 
     margin-left: -500px;
     background: rgba(255, 0, 0, 0.5);
+    z-index: 2;
 }
 
 #leafR { 
@@ -60,6 +63,8 @@ h1 {
     margin-left: -500px;
     box-shadow: 0px 6px 1px 2px rgba(0, 0, 0, 0.2);
 }
+
+/* DIAGRAM TEXT */
 
 .labelContainer {
     height: 100%;
@@ -129,64 +134,32 @@ h1 {
 .data {
     height: 28px;
 
-    background: rgba(255, 255, 255, 0.8);
+    transition: opacity .2s;
+    opacity: .8;
+
+    background-image: linear-gradient(90deg, rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.6));
     
     border-style: none;
+    border-radius: 10px 10px 10px 0px;
     
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.left.data {
-    border-radius: 10px 10px 10px 0px;    
+.data:hover {
+    opacity: 1;
+}
+
+.left.data {  
     margin-left: 10px;
 }
 
 .right.data {
-    border-radius: 10px 10px 0px 10px;
     margin-right: 10px;
 }
 
-.mid.data {
-    border-radius: 10px 10px 10px 0px;
-}
-
-.left.data.problem::before {
-    position: absolute;
-
-    padding-left: 3px;
-    padding-right: 3px;
-
-    margin-top: 28px;
-    margin-left: -5px;
-
-    font-size: 9pt;
-    content: "Problem";
-
-    background: rgba(255, 251, 0, 0.8);
-    
-    border-radius: 0px 0px 5px 5px;
-}
-
-.right.data.problem::after {
-    position: absolute;
-
-    padding-left: 3px;
-    padding-right: 3px;
-
-    margin-top: 28px;
-    margin-left: -48px;
-
-    font-size: 9pt;
-    content: "Problem";
-
-    background: rgba(255, 251, 0, 0.8);
-    
-    border-radius: 0px 0px 5px 5px;
-
-}
-
-.mid.data.problem::before {
+.data.problem::before {
+    transition: padding-right .2s;
     position: absolute;
 
     padding-left: 3px;
