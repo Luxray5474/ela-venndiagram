@@ -22,6 +22,7 @@ a {
 /* DIAGRAM */
 
 .diagramContainer {
+    margin-top: -20px;
     width: 100%;
     height: 500px;
     display: flex;
@@ -86,16 +87,19 @@ a {
 }
 
 .label {
-    transition: color .2s ease-in-out;
-    color: rgba(255, 255, 255, 0.5);
+    transition: all .2s ease-in-out;
+    color: rgba(255, 255, 255);
+    opacity: .5
 }
 
 .label:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255);
+    opacity: 1;
 }
 
 .labelContainer:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255);
+    opacity: 1;
 }
 
 #labelContainerLeft { 
@@ -131,7 +135,7 @@ a {
 
 #dataContainerLeft {
     flex-direction: row;
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 #dataContainerRight {
@@ -142,15 +146,21 @@ a {
 
 #dataContainerMid {
     justify-content: center;
-    width: 70%;
+    width: 90%;
     flex-direction: row;
     padding-left: 25px;
     padding-right: 25px;
-    margin-left: 35px;
+    margin-left: -7px;
 }
 
 .spacer {
     width: 30px;
+    height: 30px;
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.spacer2x {
+    width: 60px;
     height: 30px;
     border-color: rgba(255, 255, 255, 0);
 }
@@ -166,8 +176,8 @@ a {
     border-style: none;
     border-radius: 10px 10px 10px 0px;
     
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
     box-sizing: border-box;
     z-index: 11;
 }
@@ -181,6 +191,12 @@ a {
     opacity: 1;
     background: rgba(80, 200, 120, 0.8);
 }
+
+.data.bottomline:hover {
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+}
+
 
 .left.data {  
     margin-left: 10px;
@@ -197,7 +213,7 @@ a {
     padding-right: 3px;
 
     margin-top: 28px;
-    margin-left: -5px;
+    margin-left: -6px;
 
     font-size: 9pt;
     content: "Problem";
@@ -213,4 +229,26 @@ a {
 .data.solution::before {
     content: "Solution";
     background: rgba(80, 200, 120, 0.8);
+}
+
+.data.bottomline::before {
+    content: "Bottom Line";
+    background: rgba(173, 173, 173, 0.8);
+}
+
+#slate {
+    margin-bottom: -1px;
+    height: 15px;
+    margin-left: 2px;
+    border-left: 2px solid white;
+    padding-left: 5px;
+}
+
+#neatoday {
+    height: 15px;
+    margin-bottom: -2px;
+    margin-left: 2px;
+    border-left: 2px solid white;
+    padding-left: 5px;
+    padding-top: -1px;
 }
